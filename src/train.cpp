@@ -14,7 +14,6 @@ void Train::addCar(bool light) {
   node->next = node;
   first = node;
   } else {
-  Car *SecFirst = first;
   node->light = light;
   node->next = first;
   node->prev = first->prev;
@@ -25,8 +24,6 @@ void Train::addCar(bool light) {
 
 int Train::getLength() {
   first->light = true;
-  Car *SecFirst = first;
-  int q = 1;
   int carriages = 1;
   while (first->light) {
   carriages = 1;
