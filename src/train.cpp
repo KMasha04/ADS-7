@@ -23,10 +23,10 @@ void Train::addCar(bool light) {
 }
 
 int Train::getLength() {
-   countOp = 0
+   countOp = 0;
      while (true) {
         Car* SecFirst = first;
-  uint16_t carriages = 1;
+  int carriages = 1;
   if (!SecFirst->light)
           SecFirst->light = true;
      SecFirst = SecFirst->next;
