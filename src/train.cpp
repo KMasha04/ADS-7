@@ -36,7 +36,6 @@ int Train::getLength() {
   SecFirst->light = false;
   countOp += carriages * 2;
   }
-  }
   return carriages;
 }
 int Train::getOpCount() {
